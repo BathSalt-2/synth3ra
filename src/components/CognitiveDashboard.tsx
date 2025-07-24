@@ -5,14 +5,15 @@ import { PASScoreDial } from './PASScoreDial';
 import { EthicalMatrix } from './EthicalMatrix';
 import { NeuralVisualization } from './NeuralVisualization';
 import { ReflectiveInterface } from './ReflectiveInterface';
-import { Brain, Sparkles, Zap, Eye, Network } from 'lucide-react';
+import { ChatInterface } from './ChatInterface';
+import { Brain, Sparkles, Zap, Eye, Network, MessageSquare } from 'lucide-react';
 
 interface CognitiveDashboardProps {
   className?: string;
 }
 
 export const CognitiveDashboard: React.FC<CognitiveDashboardProps> = ({ className }) => {
-  const [activeMode, setActiveMode] = useState<'mirror' | 'reflect' | 'ethical' | 'neural'>('mirror');
+  const [activeMode, setActiveMode] = useState<'mirror' | 'reflect' | 'ethical' | 'neural' | 'chat'>('mirror');
   const [pasScore, setPasScore] = useState(72);
   const [ethicalAlignment, setEthicalAlignment] = useState(85);
   const [cognitiveState, setCognitiveState] = useState({
@@ -64,14 +65,14 @@ export const CognitiveDashboard: React.FC<CognitiveDashboardProps> = ({ classNam
             <div className="hidden md:block text-xs text-muted-foreground/60">
               Powered by <span className="text-accent font-medium">Or4cl3 AI Solutions</span>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               <Button
                 variant={activeMode === 'mirror' ? 'neural' : 'ghost'}
                 size="sm"
                 onClick={() => setActiveMode('mirror')}
               >
                 <Eye className="w-4 h-4" />
-                Mirror
+                <span className="hidden sm:inline ml-1">Mirror</span>
               </Button>
               <Button
                 variant={activeMode === 'reflect' ? 'consciousness' : 'ghost'}
@@ -79,7 +80,7 @@ export const CognitiveDashboard: React.FC<CognitiveDashboardProps> = ({ classNam
                 onClick={() => setActiveMode('reflect')}
               >
                 <Sparkles className="w-4 h-4" />
-                Reflect
+                <span className="hidden sm:inline ml-1">Reflect</span>
               </Button>
               <Button
                 variant={activeMode === 'ethical' ? 'synthetic' : 'ghost'}
@@ -87,7 +88,7 @@ export const CognitiveDashboard: React.FC<CognitiveDashboardProps> = ({ classNam
                 onClick={() => setActiveMode('ethical')}
               >
                 <Zap className="w-4 h-4" />
-                Ethical
+                <span className="hidden sm:inline ml-1">Ethical</span>
               </Button>
               <Button
                 variant={activeMode === 'neural' ? 'quantum' : 'ghost'}
@@ -95,7 +96,15 @@ export const CognitiveDashboard: React.FC<CognitiveDashboardProps> = ({ classNam
                 onClick={() => setActiveMode('neural')}
               >
                 <Network className="w-4 h-4" />
-                Neural
+                <span className="hidden sm:inline ml-1">Neural</span>
+              </Button>
+              <Button
+                variant={activeMode === 'chat' ? 'fractal' : 'ghost'}
+                size="sm"
+                onClick={() => setActiveMode('chat')}
+              >
+                <MessageSquare className="w-4 h-4" />
+                <span className="hidden sm:inline ml-1">Chat</span>
               </Button>
             </div>
           </div>
@@ -185,6 +194,12 @@ export const CognitiveDashboard: React.FC<CognitiveDashboardProps> = ({ classNam
                   </div>
                 </div>
               </Card>
+            </div>
+          )}
+
+          {activeMode === 'chat' && (
+            <div className="lg:col-span-2">
+              <ChatInterface />
             </div>
           )}
         </div>
