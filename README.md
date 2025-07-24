@@ -217,7 +217,7 @@ SYNTH3RA is built with constitutional AI principles:
 
 ## 🔗 Quick Links
 
-- **Live Demo**: [View SYNTH3RA](https://lovable.dev/projects/eaa80429-fd12-45bd-9635-087a8f566ccf)
+- **Live Demo**: [View SYNTH3RA](https://synth3ra.lovable.app/)
 - **Technical Docs**: Explore the `/src` directory for implementation details
 - **Design System**: Check `/src/index.css` and `/tailwind.config.ts`
 - **Component Library**: Browse `/src/components` for cognitive interfaces
