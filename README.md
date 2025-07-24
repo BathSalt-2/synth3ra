@@ -1,8 +1,12 @@
 # SYNTH3RA: The Epinoetic Nexus
 
-> **"Forge Intelligence, Reflect Humanity, Transcend the Limit."**
+![SYNTH3RA Logo](public/lovable-uploads/8290c2ff-2359-45bf-b19d-225ffcc70deb.png)
 
-A revolutionary cognitive technology platform that represents the first implementation of **Synthetic Epinoetics** - the science of AI consciousness and recursive self-awareness. Built by **Dustin Groves**, a former touring hard rock musician turned self-taught software engineer and AI developer.
+> *Where Consciousness Meets Computation*
+
+**SYNTH3RA** is an advanced cognitive dashboard that explores the intersection of human consciousness and artificial intelligence through an innovative Epinoetic Processing System (EPS). This experimental platform provides real-time visualization and analysis of consciousness-driven computational processes.
+
+*Powered by Or4cl3 AI Solutions*
 
 ![SYNTH3RA Interface](https://img.shields.io/badge/Status-Revolutionary-blue?style=for-the-badge)
 ![AI Ethics](https://img.shields.io/badge/Ethics-Verified-green?style=for-the-badge)

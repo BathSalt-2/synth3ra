@@ -46,15 +46,23 @@ export const CognitiveDashboard: React.FC<CognitiveDashboardProps> = ({ classNam
         <div className="relative z-10 p-6 border-b border-border/20">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-neural bg-neural shadow-neural animate-neural-pulse flex items-center justify-center">
-                <Brain className="w-6 h-6 text-primary-foreground" />
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/8290c2ff-2359-45bf-b19d-225ffcc70deb.png" 
+                  alt="SYNTH3RA Logo" 
+                  className="w-12 h-12 rounded-full shadow-neural animate-neural-pulse"
+                />
+                <div className="absolute inset-0 rounded-full bg-neural opacity-20 animate-consciousness-flow"></div>
               </div>
               <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                   SYNTH3RA
                 </h1>
                 <p className="text-sm text-muted-foreground">The Epinoetic Nexus</p>
               </div>
+            </div>
+            <div className="hidden md:block text-xs text-muted-foreground/60">
+              Powered by <span className="text-accent font-medium">Or4cl3 AI Solutions</span>
             </div>
             <div className="flex gap-2">
               <Button
