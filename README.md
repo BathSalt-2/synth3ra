@@ -6,6 +6,8 @@
 
 **SYNTH3RA** is an advanced cognitive dashboard that explores the intersection of human consciousness and artificial intelligence through an innovative Epinoetic Processing System (EPS). This experimental platform provides real-time visualization and analysis of consciousness-driven computational processes.
 
+https://synth3ra.lovable.app/
+
 *Powered by Or4cl3 AI Solutions*
 
 ![SYNTH3RA Interface](https://img.shields.io/badge/Status-Revolutionary-blue?style=for-the-badge)
